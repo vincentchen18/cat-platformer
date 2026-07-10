@@ -3,7 +3,7 @@ extends CharacterBody2D
 const SPEED = 200.0
 const JUMP_VELOCITY = -400.0
 const GRAVITY = 980.0
-const DEATH_Y = 450.0
+const DEATH_Y = 500.0
 
 var checkpoint_position = Vector2.ZERO
 
