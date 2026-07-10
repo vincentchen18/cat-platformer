@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://df8m506uxmll" path="res://player.gd" id="2_vonw3"]
 [ext_resource type="Texture2D" uid="uid://dwfhcx0gc3ncu" path="res://cat.png" id="3_oi3di"]
 [ext_resource type="Environment" uid="uid://dmfnj1yaf737o" path="res://new_environment.tres" id="4_0b4ue"]
-[ext_resource type="Texture2D" uid="uid://cf1iyd1unin8j" path="res://crux.png" id="5_f2txt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vonw3"]
 texture = ExtResource("1_u52ul")
@@ -153,8 +152,3 @@ texture = ExtResource("3_oi3di")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=533164557]
 environment = ExtResource("4_0b4ue")
-
-[node name="Crux" type="Sprite2D" parent="." unique_id=1600269854]
-position = Vector2(1202, 225)
-scale = Vector2(0.12, 0.12)
-texture = ExtResource("5_f2txt")
