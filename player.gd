@@ -33,7 +33,13 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
-
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var body = collision.get_collider()
+		if not body or body is TileMapLayer:
+			continue
+		if body.get_collision_layer_value(3):
+			die()
 	# death when y >= 450
 	if global_position.y >= DEATH_Y or Input.is_action_pressed("restart"):
 		die()
