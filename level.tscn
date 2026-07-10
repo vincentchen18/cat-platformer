@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://c2uu38l62tqam"]
 
 [ext_resource type="Texture2D" uid="uid://c1fs1u353pnn" path="res://basetileset.png" id="1_u52ul"]
+[ext_resource type="Texture2D" uid="uid://cqe7t1gxw7mlb" path="res://tileset2.png" id="2_1ainy"]
 [ext_resource type="Script" uid="uid://df8m506uxmll" path="res://player.gd" id="2_vonw3"]
 [ext_resource type="Texture2D" uid="uid://dwfhcx0gc3ncu" path="res://cat.png" id="3_oi3di"]
 [ext_resource type="Environment" uid="uid://dmfnj1yaf737o" path="res://new_environment.tres" id="4_0b4ue"]
@@ -76,9 +77,11 @@ texture_region_size = Vector2i(32, 32)
 8:4/0 = 0
 9:4/0 = 0
 0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 1:5/0 = 0
 2:5/0 = 0
 3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 4:5/0 = 0
 5:5/0 = 0
 6:5/0 = 0
@@ -122,10 +125,27 @@ texture_region_size = Vector2i(32, 32)
 6:9/0 = 0
 7:9/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n6hdu"]
+texture = ExtResource("2_1ainy")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
 [sub_resource type="TileSet" id="TileSet_br8fx"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_vonw3")
+sources/1 = SubResource("TileSetAtlasSource_n6hdu")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_br8fx"]
 size = Vector2(24, 24)
