@@ -29,7 +29,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 	# death when y >= 450
-	if global_position.y >= DEATH_Y:
+	if global_position.y >= DEATH_Y or Input.is_action_pressed("ui_r"):
 		die()
 
 func die():
