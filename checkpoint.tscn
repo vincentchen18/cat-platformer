@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bf2fmm2hp0lwu"]
+
+[ext_resource type="Texture2D" uid="uid://bfjvn3iy44r65" path="res://emptyflag.png" id="1_r6hke"]
+[ext_resource type="Texture2D" uid="uid://ccyo13mnx6fy7" path="res://checkpointflag.png" id="2_tnhlw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_br8fx"]
+size = Vector2(32, 48)
+
+[node name="Checkpoint" type="Area2D" unique_id=768997250]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=959486830]
+shape = SubResource("RectangleShape2D_br8fx")
+
+[node name="FlagEmpty" type="Sprite2D" parent="." unique_id=811289486]
+texture = ExtResource("1_r6hke")
+
+[node name="FlagRaised" type="Sprite2D" parent="." unique_id=1397866852]
+visible = false
+texture = ExtResource("2_tnhlw")
