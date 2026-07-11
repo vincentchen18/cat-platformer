@@ -261,10 +261,10 @@ texture = ExtResource("8_i2t4f")
 [node name="Node2D" type="Node2D" parent="." unique_id=1438350781]
 
 [node name="Label" type="Label" parent="Node2D" unique_id=1479717610]
-offset_left = 514.0
-offset_top = 220.0
-offset_right = 738.0
-offset_bottom = 321.0
+offset_left = 519.0
+offset_top = 258.0
+offset_right = 743.0
+offset_bottom = 385.0
 text = "welcome to my platformer :)
 i will \"guide\" you through!
 arrow keys to move
@@ -279,10 +279,10 @@ offset_bottom = 26.0
 text = "Wrong way.   :)"
 
 [node name="Label3" type="Label" parent="Node2D" unique_id=694877206]
-offset_left = 1325.0
-offset_top = 232.0
-offset_right = 1439.0
-offset_bottom = 266.0
+offset_left = 1320.0
+offset_top = 248.0
+offset_right = 1523.0
+offset_bottom = 282.0
 text = "jump using [ SPACE ] or ↑ :)"
 
 [node name="Label4" type="Label" parent="Node2D" unique_id=12392852]
@@ -328,7 +328,7 @@ offset_left = 4138.0
 offset_top = 183.0
 offset_right = 4389.0
 offset_bottom = 258.0
-text = "r to reset"
+text = "r to respawn :)"
 
 [node name="Label10" type="Label" parent="Node2D" unique_id=1633093953]
 offset_left = 5002.0
