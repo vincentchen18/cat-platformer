@@ -584,6 +584,14 @@ offset_right = 7242.0
 offset_bottom = -1843.0
 text = "What, HOW?! THAT'S IT, NO MORE CHECKPOINTS!!!!!!!"
 
+[node name="Label32" type="Label" parent="Node2D" unique_id=53146033]
+offset_left = 6372.0
+offset_top = -1878.0
+offset_right = 6777.0
+offset_bottom = -1777.0
+text = "good luck jumping on the boost edges lmao, 
+ur not gonna pass"
+
 [node name="Label23" type="Label" parent="Node2D" unique_id=2048122867]
 offset_left = 9403.0
 offset_top = -1098.0
