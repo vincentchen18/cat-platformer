@@ -32,6 +32,9 @@ func _physics_process(delta):
 	if Input.is_key_pressed(KEY_F) and not fly_pressed_last:
 		flying = not flying
 		velocity = Vector2.ZERO
+		xvelocity = 0
+		yvelocity = 0
+		boostvelocity = Vector2.ZERO
 	fly_pressed_last = Input.is_key_pressed(KEY_F)
 
 	if flying:
@@ -72,8 +75,7 @@ func _physics_process(delta):
 	boostvelocity.x = move_toward(boostvelocity.x, 0, 800 * delta) 
 	boostvelocity.y = move_toward(boostvelocity.y, 0, 800 * delta)
 	apply_arrow_push(delta)
-	
-	# SMART CAPPING: Handles the abs() separation checks cleanly
+
 	if abs(boostvelocity.x) > 0:
 		velocity.x = sign(boostvelocity.x) * maxf(abs(xvelocity), abs(boostvelocity.x))
 	else:
