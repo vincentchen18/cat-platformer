@@ -14,10 +14,10 @@ You do not even know your origin...
 Arrow keys to move.
  - Debug mode: F to Fly and WASD to Move
 
-**Asset Credits**
-- Tile Textures:
+**Credits**
+- Tile Textures, an overwhelming majority of the code and some level construction:
    Vincent Chen
-- Character Sprite:
+- Character Sprites, most of the level construction, player physics:
   Lucas Liu
-- Soundtrack and Ending Animation
+- Soundtrack, ending Animation, title screen, unused textures, player physics :
   Jayden Liu
