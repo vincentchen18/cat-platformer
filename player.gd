@@ -18,7 +18,7 @@ var yvelocity: float = 0.0
 
 ## DEBUG LINES: REMOVE THESE WHEN SHIP PROJECT ##
 var flying = false
-const FLY_SPEED = 400.0
+const FLY_SPEED = 1200.0
 var fly_pressed_last = false
 ##
 
