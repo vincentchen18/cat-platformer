@@ -433,6 +433,22 @@ offset_bottom = 50.0
 text = "leap of faith! -->
 "
 
+[node name="Label34" type="Label" parent="Node2D" unique_id=552418177]
+offset_left = 5680.0
+offset_top = -893.0
+offset_right = 5949.0
+offset_bottom = -818.0
+text = "Find me at crux.
+"
+
+[node name="Label33" type="Label" parent="Node2D" unique_id=1991008252]
+offset_left = 3696.0
+offset_top = -176.0
+offset_right = 3965.0
+offset_bottom = -101.0
+text = "Find me at the southern cross.
+"
+
 [node name="Label5" type="Label" parent="Node2D" unique_id=1018872140]
 offset_left = 2228.0
 offset_top = 251.0
