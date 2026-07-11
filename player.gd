@@ -104,7 +104,7 @@ func apply_arrow_push(delta):
 				if not on_arrow:
 					if dir.x == 0:
 						yvelocity = 0
-						boostvelocity = dir * push_force * 0.88   # vertical arrows
+						boostvelocity = dir * push_force * 1.3   # vertical arrows
 					else:
 						boostvelocity = dir * push_force       # horizontal
 				break
