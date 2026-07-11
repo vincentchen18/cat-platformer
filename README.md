@@ -10,14 +10,14 @@ You do not even know your origin...
 **AI USAGE**
 - No AI used in generating any textures or code, only used for debugging.
 
+**Motivation**
+
 **Controls**
 Arrow keys to move.
  - Debug mode: F to Fly and WASD to Move
 
 **Credits**
-- Tile Textures, an overwhelming majority of the code and some level construction:
-   Vincent Chen
-- Character Sprites, most of the level construction, player physics:
-  Lucas Liu
-- Soundtrack, ending Animation, title screen, unused textures, player physics :
-  Jayden Liu
+Vincent Chen - Tile Textures, an overwhelming majority of the code and some level construction:
+Lucas Liu - Character Sprites, most of the level construction, player physics:
+Jayden Liu - Soundtrack, ending Animation, title screen, unused textures, player physics :
+
