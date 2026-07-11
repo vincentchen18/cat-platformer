@@ -16,10 +16,28 @@ var xvelocity: float = 0.0
 var yvelocity: float = 0.0
 @onready var sprite: Node2D = $Sprite2D
 
+## DEBUG LINES: REMOVE THESE WHEN SHIP PROJECT ##
+var flying = false
+const FLY_SPEED = 400.0
+var fly_pressed_last = false
+##
+
+
 func _ready():
 	checkpoint_position = global_position  # start point is the first checkpoint
 
 func _physics_process(delta):
+	## DEBUG CODE
+	# toggle fly mode with F
+	if Input.is_key_pressed(KEY_F) and not fly_pressed_last:
+		flying = not flying
+		velocity = Vector2.ZERO
+	fly_pressed_last = Input.is_key_pressed(KEY_F)
+
+	if flying:
+		fly_movement(delta)
+		return   # skip all normal movement/gravity/death
+	## END DEBUG CODE
 	if coyote_timer > 0:
 		coyote_timer -= delta
 	# gravity
@@ -109,3 +127,17 @@ func apply_arrow_push(delta):
 						boostvelocity = dir * push_force       # horizontal
 				break
 	on_arrow = found
+
+# MORE DEBUG CODE
+func fly_movement(delta):
+	var dir = Vector2.ZERO
+	if Input.is_key_pressed(KEY_A):
+		dir.x -= 1
+	if Input.is_key_pressed(KEY_D):
+		dir.x += 1
+	if Input.is_key_pressed(KEY_W):
+		dir.y -= 1
+	if Input.is_key_pressed(KEY_S):
+		dir.y += 1
+	velocity = dir.normalized() * FLY_SPEED
+	move_and_slide()
