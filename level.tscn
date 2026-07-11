@@ -195,23 +195,23 @@ texture = ExtResource("3_oi3di")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=533164557]
 environment = ExtResource("4_0b4ue")
 
+[node name="Checkpoint6" parent="." unique_id=282710866 instance=ExtResource("5_f2txt")]
+position = Vector2(5841, -725)
+
 [node name="Checkpoint4" parent="." unique_id=1841469903 instance=ExtResource("5_f2txt")]
-position = Vector2(4908, -121)
+position = Vector2(4921, -117)
 
 [node name="Checkpoint5" parent="." unique_id=768997250 instance=ExtResource("5_f2txt")]
-position = Vector2(4999, -504)
-
-[node name="Checkpoint5" parent="Checkpoint5" unique_id=282710866 instance=ExtResource("5_f2txt")]
-position = Vector2(813, -224)
+position = Vector2(5016, -503)
 
 [node name="Checkpoint3" parent="." unique_id=461975145 instance=ExtResource("5_f2txt")]
-position = Vector2(5072, 39)
+position = Vector2(5105, 43)
 
 [node name="Checkpoint2" parent="." unique_id=355570205 instance=ExtResource("5_f2txt")]
 position = Vector2(3374, -56)
 
 [node name="Checkpoint1" parent="." unique_id=2073563870 instance=ExtResource("5_f2txt")]
-position = Vector2(2335, 328)
+position = Vector2(2367, 330)
 
 [node name="MovingPlatform1" type="AnimatableBody2D" parent="." unique_id=885010605]
 script = ExtResource("7_km5ld")
