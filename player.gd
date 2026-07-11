@@ -14,6 +14,7 @@ var checkpoint_position = Vector2.ZERO
 var boostvelocity: Vector2 = Vector2.ZERO
 var xvelocity: float = 0.0
 var yvelocity: float = 0.0
+@onready var sprite: Node2D = $Sprite2D
 
 func _ready():
 	checkpoint_position = global_position  # start point is the first checkpoint
@@ -40,6 +41,10 @@ func _physics_process(delta):
 	# left/right movement
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
+		if direction > 0:
+			sprite.flip_h = true
+		else:
+			sprite.flip_h = false
 		xvelocity = direction * SPEED
 	else:
 		xvelocity = 0
