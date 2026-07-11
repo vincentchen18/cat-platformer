@@ -10,6 +10,10 @@ You do not even know your origin...
 **AI USAGE**
 - No AI used in generating any textures or code, only used for debugging.
 
+**Install Instructions**
+https://vincentchen18.itch.io/meet-me-at-crux
+- Follow install instructions at itch link
+
 **Motivation**
 
 **Controls**
