@@ -6,7 +6,7 @@ const JUMP_VELOCITY = -400.0
 const GRAVITY = 980.0
 const DEATH_Y = 500.0
 const coyote_time = 0.06
-
+var on_arrow: bool = false
 var coyote_timer: float = 0.0
 var checkpoint_position = Vector2.ZERO
 
@@ -49,25 +49,18 @@ func die():
 	global_position = checkpoint_position
 	velocity = Vector2.ZERO
 func apply_arrow_push(delta):
-	var points = [
-		global_position,
-		global_position + Vector2(0, 16),
-		global_position + Vector2(0, -16),
-	]
-	for p in points:
+	var found = false
+	for p in [global_position, global_position + Vector2(0, 16), global_position + Vector2(0, -16)]:
 		var cell = tilemap.local_to_map(tilemap.to_local(p))
 		var data = tilemap.get_cell_tile_data(cell)
 		if data:
 			var dir = data.get_custom_data("push_dir")
 			if dir != Vector2.ZERO:
-				# lift off the ground so friction doesn't eat the launch
-				global_position.y -= 4
-				if dir.x == 0:
-					velocity = dir*push_force*0.25
-				else:
-					if is_on_floor():
-						velocity = dir*push_force*5
+				found = true
+				if not on_arrow:
+					if dir.x == 0:
+						velocity += dir * push_force * 0.25   # vertical arrows: weaker
 					else:
-						velocity = dir * push_force
-
-				return
+						velocity += dir * push_force          # horizontal: full
+				break
+	on_arrow = found
