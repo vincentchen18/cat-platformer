@@ -1,4 +1,5 @@
 extends CharacterBody2D
+var won = false
 @export var push_force = 1000
 @onready var tilemap = $"../TileMapLayer"
 const SPEED = 200.0
@@ -27,6 +28,8 @@ func _ready():
 	checkpoint_position = global_position  # start point is the first checkpoint
 
 func _physics_process(delta):
+	if won: 
+		return
 	## DEBUG CODE
 	# toggle fly mode with F
 	if Input.is_key_pressed(KEY_F) and not fly_pressed_last:
@@ -129,7 +132,24 @@ func apply_arrow_push(delta):
 						boostvelocity = dir * push_force       # horizontal
 				break
 	on_arrow = found
+func win():
+	won = true
+	velocity = Vector2.ZERO
+	animate_win_camera()
+	
+func animate_win_camera():
+	var cam = $Camera2D
+	var tween = create_tween()
+	tween.set_parallel(true)
+	tween.tween_property(cam, "position", cam.position + Vector2(0, -580), 7.0)
+	tween.tween_property(cam, "zoom", Vector2(0.5, 0.5), 7.0)
+	tween.chain().tween_interval(2.0)
+	tween.chain().tween_callback(play_win_video)
 
+func play_win_video():
+	var video = get_node("/root/Level/WinScreen/VideoStreamPlayer")
+	video.show()
+	video.play()
 # MORE DEBUG CODE
 func fly_movement(delta):
 	var dir = Vector2.ZERO
@@ -143,3 +163,4 @@ func fly_movement(delta):
 		dir.y += 1
 	velocity = dir.normalized() * FLY_SPEED
 	move_and_slide()
+	
