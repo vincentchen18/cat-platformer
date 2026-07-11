@@ -37,7 +37,9 @@ func _physics_process(delta):
 	if (Input.is_action_pressed("ui_accept") or Input.is_action_pressed("ui_up")) and (is_on_floor() || coyote_timer > 0):
 		coyote_timer = 0
 		yvelocity = JUMP_VELOCITY
-
+	if is_on_wall():
+		xvelocity = 0
+		boostvelocity.x = 0
 	# left/right movement
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
