@@ -10,18 +10,25 @@ You do not even know your origin...
 **AI USAGE**
 - No AI used in generating any textures or code, only used for debugging.
 
-**Install Instructions**
-https://vincentchen18.itch.io/meet-me-at-crux
-- Follow install instructions at itch link
+**Installation Instructions**
+Binaries / Web Playable executables are available at both:
+-[itch.io](https://vincentchen18.itch.io/meet-me-at-crux)
+-[github release](https://github.com/vincentchen18/cat-platformer/releases/tag/v1)
 
-**Motivation**
+### Windows:
+Download and run the exe
+### Mac: 
+Clone the Repo or play the web version at the itch link
+### Linux:
+Download the linux binary and run it or alternatively, download it from the snap store using the following command:
+`sudo snap install meet-me-at-crux`
 
 **Controls**
 Arrow keys to move.
  - Debug mode: F to Fly and WASD to Move
 
 **Credits**
-Vincent Chen - Tile Textures, an overwhelming majority of the code and some level construction:
-Lucas Liu - Character Sprites, most of the level construction, player physics:
-Jayden Liu - Soundtrack, ending Animation, title screen, unused textures, player physics :
+Vincent Chen - Tile Textures, an overwhelming majority of the code and some level construction, game exportation and publication
+Lucas Liu - Character Sprites, most of the level construction, player physics
+Jayden Liu - Soundtrack, ending Animation, title screen, unused textures, player physics
 
