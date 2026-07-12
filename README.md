@@ -1,5 +1,7 @@
 # Meet Me At Crux
  - By Vincent Chen, Jayden Liu and Lucas Liu for Horizons Crux
+
+
 Meet Me At Crux is an adventure platformer game where you explore to find the origins of your... being? Don't worry though, you'll be guided by a (somewhat unreliable) narrator! Good luck!
 
 You do not even know your origin...
