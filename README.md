@@ -12,7 +12,9 @@ You do not even know your origin...
 
 ## Installation Instructions
 Binaries / Web Playable executables are available at both:
+
 -[itch.io](https://vincentchen18.itch.io/meet-me-at-crux)
+
 -[github release](https://github.com/vincentchen18/cat-platformer/releases/tag/v1)
 
 ### Windows:
